@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+}
+
+.topo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    justify-content: space-between;
+}
+
+.topo .container {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topo .container .busca {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border: 1px solid #eeeeee;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.topo .container .busca:hover {
+    box-shadow: 0 2px 4px #0000002e;
+    transition: box-shadow 500ms ease-out 100ms;
+}
+
+.topo .container .busca textbox {
+    width: 90%;
+    height: 70%;
+}
+
+.topo .container .logo {
+    width: 150px;
+}
+
+.topo .container .perfil {
+    display: flex;
+    border: 1px solid #eeeeee;
+    border-radius: 40px;
+    width: 100px;
+    padding: 1px;
+    justify-content: space-between;
+}
+
+.topo .container .perfil:hover {
+    box-shadow: 0 2px 4px #0000002e;
+    transition: box-shadow 500ms ease-out 100ms;
+}
+
+.topo .container .perfil .barrinhas {
+    margin: auto;
+}
+
+.topo .container .perfil .barrinhas .barrinha-menu {
+    height: 2px;
+    width: 20px;
+    background-color: #eeeeee;
+    display: block;
+    margin: 4px;
+}
+
+.topo .container .perfil .imagem {
+    height: 40px;
+    margin: auto;
+}
+
+.barraTipos {
+    margin: auto;
+    width: 94%;
+    height: 100px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.barraTipos .tipo {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 200px;
+    text-align: center;
+    filter: contrast(calc(13/44));
+}
+
+.barraTipos .tipo:hover {
+    cursor: pointer;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.barraTipos .tipo .icone {
+    height: 24px;
+    margin: auto;
+}
+
+.lugares {
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lugares .grupoLugar {
+    display: flex;
+    margin: 10px auto;
+}
+
+.lugares .grupoLugar .imagem {
+    width: 271px;
+    height: 261px;
+    border-radius: 15px;
+}
+
+.lugares .grupoLugar .local {
+    font-weight: 800;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.lugares .grupoLugar .tipo {
+    color: #717171;
+    margin-top: 5px;
+}
+
+.lugares .grupoLugar .periodo {
+    color: #717171;
+}
+
+.lugares .grupoLugar .preco {
+    margin-top: 5px;
+}
+
+.rodape {
+    color: #717171;
+    width: 90%;
+    border-top: 1px solid #eeeeee;
+    height: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+
+    .topo .container .perfil {
+        display: none;
+    }
+
+    .barra {
+        overflow-x: scroll;
+    }
+    
+    .barraTipos {
+        min-width: 800px;
+    }
+}
